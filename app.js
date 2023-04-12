@@ -2,13 +2,12 @@ var btnTranslate = document.querySelector('#btn-translate');
 var txtInput = document.querySelector('#txt-input');
 var outputDiv = document.querySelector('#output');
 
-// var serverURL = 'https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json';
 var serverURL = 'https://api.funtranslations.com/translate/minion.json';
 
 // This function will return the URL which we will use to fetch the data from the server.
 function getTranslationURL(input) {
     return serverURL + '?' + 'text=' + input;
-    // Our required URL is -> "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=I am Arijit" so this is basically (serverURL + '?' + 'text=' + what we are entering in the input box).
+    // Our required URL is -> "https://api.funtranslations.com/translate/minion.json?text=I am Arijit" so this is basically (serverURL + '?' + 'text=' + what we are entering in the input box).
 }
 
 function errorHandler(error) {
